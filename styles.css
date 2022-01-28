@@ -1,0 +1,54 @@
+.weather-currently {
+    font-size: 25;
+    background-color: rgb(235, 170, 147);
+    border-radius: 5px;
+    border: solid;
+    margin: 5px;
+    max-width: 350px;
+}
+
+.background-blue {
+    font-size: 25;
+    background-color: rgb(41, 41, 214);
+    border-radius: 3px;
+    border: solid;
+    margin: 5px;
+    max-width: 250px;
+    float: left;
+}
+
+.background-green {
+    background-color: olivedrab;
+    max-width: 300px;
+}
+
+.background-yellow {
+    background-color: palegoldenrod;
+    max-width: 300px;
+}
+
+.background-red {
+    background-color: rgb(255, 66, 66);
+    max-width: 300px;
+}
+
+#header {
+    font: 55px;
+    color: violet;
+    margin: auto;
+    background-color: wheat;
+}
+
+#search-bar {
+    font-size: 25;
+    background-color: rgb(160, 154, 154);
+    color: tomato;
+    border-radius: 1px;
+    border: solid;
+    margin: 2px;
+    max-width: 250px;
+}
+
+body {
+    background-color: rgb(126, 183, 219);
+}
