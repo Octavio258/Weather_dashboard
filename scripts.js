@@ -1,5 +1,5 @@
 const search = document.querySelector("#search-bar")
-const findWeather = document.querySelector("#clicker")
+const findWeather = document.querySelector("#Clicker")
 const weatherToday = document.querySelector("#inputSearch")
 const currentForecast = document.querySelector("#currentWeather")
 const futureForecast = document.querySelector("#forecast")
