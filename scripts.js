@@ -7,7 +7,7 @@ const previousSearch = document.querySelector("#history")
 const recentSearches = JSON.parse(localStorage.getItem("recentSearches")) || []
 
 function getWeather(cityName) {
-    const weatherApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
+    const weatherApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=8754ebc3f3a844733d1b9dfb8d399cf4`
 
     fetch(weatherApi)
     .then((data) => data.json())
@@ -15,7 +15,7 @@ function getWeather(cityName) {
         console.log(newData)
         let lat = newData.coord.lat
         let lon = newData.coord.lon
-        const forecastApi = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&${API_KEY}`
+        const forecastApi = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=8754ebc3f3a844733d1b9dfb8d399cf4&units=imperial`
         fetch(forecastApi)
         .then((data)=> data.json())
         .then((newData) => {
@@ -33,7 +33,8 @@ function TodaysWeather(weather) {
     currentForecast.innerHTML = ''
     let card = document.createElement('div')
     let temp = document.createElement('h3')
-    let windSpeed = document.createElement('h5')
+    let windSpeed = document.createElement('h2')
+    let humid = document.createElement('h5')
     let uv = document.createElement('h4')
     let icon = document.createElement('img')
 
